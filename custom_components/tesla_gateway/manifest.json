@@ -1,9 +1,11 @@
 {
   "codeowners": ["@carboncoop"],
-  "config_flow": true,
+  "config_flow": false,
   "dependencies": [],
   "documentation": "https://github.com/carboncoop/tesla-gateway-ha-component",
+  "issue_tracker": "https://github.com/carboncoop/tesla-gateway-ha-component/issues",
   "domain": "tesla_gateway",
   "name": "Tesla Gateway",
+  "version": "0.0.1a",
   "requirements": []
 }
