@@ -4,7 +4,7 @@ Uses the Tesla API to control a Powerwall.
 
 ## Installation
 
-Install the repository through HACS or by copying the `custom_components/tesla_gateway` folder into your `custom_components` folder.
+Install the repository through HACS by adding a custom repository or by manually copying the `custom_components/tesla_gateway` folder into your `custom_components` folder.
 
 ## Configuration
 
