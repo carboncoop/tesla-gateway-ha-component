@@ -1,0 +1,9 @@
+{
+  "codeowners": ["@carboncoop"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/carboncoop/tesla-gateway-ha-component",
+  "domain": "tesla_gateway",
+  "name": "Tesla Gateway",
+  "requirements": []
+}
