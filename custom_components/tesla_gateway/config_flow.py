@@ -1,16 +1,11 @@
 from typing import Any, Dict, Optional
 
 from homeassistant import config_entries
-from homeassistant.const import (
-    CONF_USERNAME,
-    CONF_PASSWORD,
-    CONF_ACCESS_TOKEN,
-)
+from homeassistant.const import CONF_PASSWORD, CONF_USERNAME
 import homeassistant.helpers.config_validation as cv
 import voluptuous as vol
 
-from .const import DOMAIN, CONF_REFRESH_TOKEN
-
+from .const import DOMAIN
 
 AUTH_SCHEMA = vol.Schema(
     {
