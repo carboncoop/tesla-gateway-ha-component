@@ -405,7 +405,7 @@ def async_setup_entry(
 
     @asyncio.coroutine
     def get_owner_api_token():
-        access_token = domain_config[CONF_ACCESS_TOKEN]
+        access_token = domain_config.get(CONF_ACCESS_TOKEN)
         if not access_token:
             access_token = yield from SSO_login()
         else:

@@ -16,8 +16,6 @@ AUTH_SCHEMA = vol.Schema(
     {
         vol.Required(CONF_USERNAME): cv.string,
         vol.Optional(CONF_PASSWORD): cv.string,
-        vol.Optional(CONF_ACCESS_TOKEN, default=""): cv.string,
-        vol.Optional(CONF_REFRESH_TOKEN, default=""): cv.string,
     }
 )
 
