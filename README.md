@@ -8,15 +8,10 @@ Install the repository through HACS by adding a custom repository or by manually
 
 ## Configuration
 
-The component is currently configured throuhg YAML. Work on a config flow version of it is in progress.
+The component is now configured through the user interface.
 
-To setup the integration, add the following to your `configuration.yaml` file:
-
-```
-tesla_gateway:
-  username: <your tesla username>
-  password: <your tesla password>
-```
+To setup the integration, got to Configuration -> Integrations, and search for Tesla Gateway
+Add your Tesla username and password.
 
 ## Services
 
@@ -30,6 +25,7 @@ Service data looks like this:
 
 ```
 real_mode: 'self_consumption'
+backup_reserve_percent: 20
 ```
 
 ### set_reserve

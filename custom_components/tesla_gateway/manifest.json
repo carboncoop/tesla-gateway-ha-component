@@ -1,6 +1,6 @@
 {
   "codeowners": ["@carboncoop"],
-  "config_flow": false,
+  "config_flow": true,
   "dependencies": [],
   "documentation": "https://github.com/carboncoop/tesla-gateway-ha-component",
   "issue_tracker": "https://github.com/carboncoop/tesla-gateway-ha-component/issues",
