@@ -53,7 +53,10 @@ TESLA_CLIENT_ID = "81527cff06843c8634fdc09e8ac0abefb46ac849f38fe1e431c2ef2106796
 
 @asyncio.coroutine
 def async_setup(hass: core.HomeAssistant, config: dict) -> bool:
+    websession = async_get_clientsession(hass, verify_ssl=False)
     hass.data.setdefault(DOMAIN, {})
+    domain_config = config[DOMAIN]
+    setup_common(domain_config=domain_config)
     return True
 
 
@@ -66,7 +69,14 @@ def async_setup_entry(
     hass.data.setdefault(DOMAIN, {})
     hass.data[DOMAIN][config_entry.entry_id] = config_entry.data
     domain_config = dict(config_entry.data)
+    # conf_user = domain_config[CONF_USERNAME]
+    # conf_password = domain_config[CONF_PASSWORD]
+    setup_common(domain_config=domain_config)
+    return True
 
+
+@asyncio.coroutine
+def setup_common(domain_config: dict):
     @asyncio.coroutine
     def SSO_login():
 
