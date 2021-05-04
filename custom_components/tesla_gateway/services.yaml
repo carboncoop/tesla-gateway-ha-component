@@ -6,12 +6,12 @@ set_operation:
       description: Mode to set to the Tesla gateway.
       example: "self_consumption, backup, autonomous"
     backup_reserve_percent:
-      description: Not sure what circumstances this is used in??
+      description: Percentage of battery reserve
       example: 10
 set_reserve:
   description: >
     Changes battery reserve percent in self_consumption mode
   fields:
-    reserve_percent:
+    backup_reserve_percent:
       description: Percentage of battery reserve
       example: 70
