@@ -30,8 +30,8 @@ backup_reserve_percent: 20
 
 ### set_reserve
 
-Changes battery reserve percent in `self_consumption` mode.
+Changes battery reserve percent.
 
 ```
-reserve_percent: 10
+backup_reserve_percent: 10
 ```
